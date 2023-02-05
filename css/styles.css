@@ -1080,6 +1080,9 @@
     }
 }
 @media (max-width: 480px) {
+    .worth__images-wrap_2 {
+        flex-direction: column-reverse !important;
+    }
     .intro__title span:before,
     .intro__title span:after,
     .investments__title span:before,
