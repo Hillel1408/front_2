@@ -184,11 +184,18 @@
     position: relative;
     margin-top: 186px;
 }
+.director__img-wrap {
+    width: 415px;
+    height: 504px;
+}
 .director__img img {
     z-index: 1;
     position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-.director__img:after {
+.director__img-wrap:after {
     content: '';
     display: block;
     width: 415px;
@@ -947,7 +954,7 @@
     .investments2__text {
         max-width: none;
     }
-    .director__img:after {
+    .director__img-wrap:after {
         display: none;
     }
 }
@@ -1003,7 +1010,7 @@
     .worth__images-block {
         min-width: auto;
     }
-    .director__img img {
+    .director__img-wrap {
         width: 100%;
         height: 504px;
         object-fit: cover;
@@ -1302,6 +1309,9 @@
     .intro__btn {
         display: block;
         margin: 0 auto;
+    }
+    .director__img-wrap {
+        height: auto;
     }
 }
 @media (max-width: 390px) {
