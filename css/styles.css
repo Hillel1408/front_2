@@ -1313,6 +1313,9 @@
     .director__img-wrap {
         height: auto;
     }
+    .intro__text {
+        margin-bottom: 46px;
+    }
 }
 @media (max-width: 390px) {
     .investments__img img {
