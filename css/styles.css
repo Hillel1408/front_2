@@ -360,7 +360,7 @@
 }
 .investments2__content {
     background-color: #2a2a2a;
-    padding: 133px 107px 151px 107px;
+    padding: 122px 243px 130px 243px;
     position: relative;
 }
 .investments2__subtitle {
@@ -375,8 +375,17 @@
     color: white;
     max-width: 800px;
 }
+.investments2__flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 .investments2__img {
-    height: 452px;
+    background-color: #2a2a2a;
+    padding: 0 243px 130px 243px;
+}
+.investments2__img-img {
+    height: 294px;
     background-image: url('../img/bg14.jpeg');
     background-size: cover;
     background-position: center;
@@ -397,38 +406,46 @@
 }
 
 .profit__img {
-    flex: 1 1 42%;
+    flex: 1 1 48%;
     margin-right: 20px;
 }
-.profit__img img {
-    width: 100%;
+.profit__img-block {
+    background-image: url('../img/bg7.png');
     height: 694px;
-    object-fit: cover;
+    background-size: cover;
+    background-position: right;
 }
 .profit {
     background-color: #efefef;
-    padding: 80px 0;
+    padding: 89px 0 80px 0;
 }
 .profit__container {
     display: flex;
 }
 .profit__title {
     margin-bottom: 13px;
-    margin-left: 80px;
+    margin-left: 245px;
 }
 .profit__subtitle {
     letter-spacing: normal;
-    margin-bottom: 124px;
-    margin-left: 80px;
+    margin-bottom: 109px;
+    margin-left: 245px;
 }
 .profit__text {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 18px;
+    line-height: 21px;
+}
+.profit__text2 {
+    font-size: 24px;
     line-height: 30px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    padding-top: 30px;
 }
 .profit__list {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 .profit__list li:not(:last-child) {
     margin-bottom: 24px;
@@ -446,7 +463,6 @@
 .profit__flex {
     display: flex;
     gap: 63px;
-    padding-top: 48px;
     flex-wrap: wrap;
 }
 .profit__flex-item {
@@ -462,8 +478,9 @@
     text-transform: uppercase;
 }
 .profit__content {
-    padding-right: 15px;
-    flex: 1 1 58%;
+    padding-right: 20px;
+    padding-top: 247px;
+    flex: 1 1 52%;
 }
 
 .profitability {
@@ -849,21 +866,14 @@
     .profitability__block-wrap {
         width: auto;
     }
+    .profit__title,
+    .profit__subtitle {
+        margin-left: 20px;
+    }
 }
 @media (max-width: 1420px) {
-    .profit__img img {
-        display: none;
-    }
-    .profit__container {
-        flex-direction: column;
-    }
-    .profit__img {
-        margin-right: 0;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
     .profit__content {
-        padding-left: 15px;
+        padding-left: 20px;
     }
     .payback__list {
         margin-left: 45px;
@@ -874,6 +884,12 @@
     }
     .profit__flex {
         gap: 40px;
+    }
+    .investments2__content {
+        padding: 122px 20px 130px 20px;
+    }
+    .investments2__img {
+        padding: 0 20px 130px 20px;
     }
 }
 @media (max-width: 1280px) {
@@ -970,6 +986,21 @@
     .payback__content {
         padding-right: 20px;
     }
+    .profit__container {
+        flex-direction: column;
+    }
+    .profit__content {
+        padding-top: 50px;
+    }
+    .profit__img-block {
+        display: none;
+    }
+    .profit__subtitle {
+        margin-bottom: 40px;
+    }
+    .investments2__text {
+        max-width: none;
+    }
 }
 @media (max-width: 1024px) {
     .risks__title span:before {
@@ -985,12 +1016,6 @@
     }
     .profit__list-item {
         margin-left: 45px;
-    }
-    .profit__title {
-        margin-left: 0;
-    }
-    .profit__subtitle {
-        margin-left: 0;
     }
     .worth__content-one {
         flex-direction: column;
@@ -1013,10 +1038,6 @@
     .worth__block-7,
     .worth__block-8 {
         flex: 1 1 35%;
-    }
-    .investments2__img {
-        height: 452px;
-        background-image: url('../img/bg15.jpeg');
     }
     .profitability__list {
         margin-left: 45px;
@@ -1260,6 +1281,25 @@
     .profitability__container {
         flex-direction: column;
     }
+    .profit {
+        padding: 40px 0 67px 0;
+    }
+    .profit__text {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 8px;
+    }
+    .profit__text2 {
+        padding-top: 0;
+        font-size: 22px;
+        line-height: 27px;
+    }
+    .investments2__content {
+        padding: 40px 20px 44px 20px;
+    }
+    .investments2__subtitle {
+        margin-bottom: 40px;
+    }
 }
 @media (max-width: 390px) {
     .investments__img img {
@@ -1271,5 +1311,11 @@
         height: 350px;
         right: auto;
         top: 25px;
+    }
+    .profit__img-block {
+        display: block;
+        height: 190px;
+        background-image: url('../img/bg20.png');
+        margin-left: 20px;
     }
 }
